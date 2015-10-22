@@ -20,7 +20,7 @@ normalization.capitalize("this is not capitalized. it should be.")
     
 ## Abbreviations Normalization
 # Output: "Doctor where were you on August fifth?"
-normalization.abbreviations("Dr. where were you on aug 5th?"
+normalization.abbreviations("Dr. where were you on aug 5th?")
     
 ## British Normalization
 # Output: "ax apologize"
