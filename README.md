@@ -3,8 +3,7 @@
 Python module for text normalization into canonical form.
 
 ## Installation
-    git clone https://github.com/dchang16/text_normalization/
-    python setup.py install
+    pip install normalization
 
 ## Example
 ```python
