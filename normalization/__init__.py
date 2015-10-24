@@ -1,9 +1,11 @@
+import os
 import re
 
-fabbreviations = open("data/abbreviations.txt", "r")
-fbritish = open("data/british.txt", "r")
-fcontractions = open("data/contractions.txt", "r")
-fspellfix = open("data/spellfix.txt", "r")
+base = os.path.dirname(os.path.realpath(__file__))
+fabbreviations = open(base + "/data/abbreviations.txt", "r")
+fbritish = open(base + "/data/british.txt", "r")
+fcontractions = open(base + "/data/contractions.txt", "r")
+fspellfix = open(base + "/data/spellfix.txt", "r")
 
 def initialize_dict(fil):
     data = {}

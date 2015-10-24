@@ -1,2 +1,2 @@
 #include data files
-recursive-include data *
+recursive-include normalization/data *

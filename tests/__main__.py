@@ -16,13 +16,16 @@ class TestNormalization(unittest.TestCase):
             "This is not capitalized. It should be.")
     def test_abbreviations(self):
         self.assertEqual(\
-            normalization.abbreviations("Dr. where were you on aug 5th?"), "Doctor where were you on August 5th?")
+            normalization.abbreviations("Dr. where were you on aug 5th?"), "Doctor where were you on August fifth?")
     def test_british(self):
         self.assertEqual(\
             normalization.british("axe apologise"), "ax apologize")
     def test_contractions(self):
         self.assertEqual(\
             normalization.contractions("I'll listen to y'all"), "I will listen to you all")
+    def test_spellfix(self):
+        self.assertEqual(\
+            normalization.spellfix("This sentance is acceptible."), "This sentence is acceptable.")
   
 if __name__ == '__main__':
     unittest.main()
